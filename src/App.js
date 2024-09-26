@@ -4,13 +4,13 @@ import Xlogo from "./XLogo.jpg";
 import TG from "./TG.png";
 
 const fortunes = [
-  "You will be rugged today by an Indian.",
-  "A great fortune awaits you.",
-  "You will buy the next cabal coin within the next 24 hours.",
-  "All your bags shall pumpeth!",
-  "You will fade a 10x today.",
-  "A forgotten friend will reach out soon.",
-  "You will restlessly shill this coin today."
+  "Prepare to be rugged by an unexpected source today.",
+  "Great fortune and gains are on the horizon.",
+  "Within the next 24 hours, a mysterious coin will capture your attention.",
+  "Your bags are primed for a mighty pump!",
+  "Today, you will miss a 10x opportunity... but laugh about it later.",
+  "An old friend will slide into your DMs soon.",
+  "You will passionately shill a coin today without remorse."
 ];
 
 const CopyIcon = () => (
@@ -59,7 +59,7 @@ function App() {
     <div
       className="relative h-screen w-screen overflow-clip"
       style={{
-        backgroundImage: `url('/bg.png')`,
+        backgroundImage: `url('/b.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         margin: 0,
@@ -67,32 +67,26 @@ function App() {
       }}
     >
       <div className='absolute left-5 top-5 flex justify-center rounded-full'>
-        <div className='rounded-full flex justify-center bg-slate-100 z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-sky-500'>
-          <button
-            onClick={handleCopy}
-            className="rounded-full text-xs bg-sky-500 text-white py-2 px-4 md:hover:bg-sky-700 transition-colors duration-300 z-10 whitespace-nowrap"
-          >
-            {copied ? 'Copied!' : <CopyIcon />}
-          </button>
+        <div className='flex justify-center bg-slate-100 z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-pink-500'>
           <div className='text-xs md:text-sm overflow-x-auto whitespace-nowrap font-custom'>
-          EccWGNJtdCGccBKkgi2vaPjvdp5E5w8EVBMoQy63pump
+            CA: revealing...
           </div>
         </div>
       </div>
 
       <div className="absolute md:top-5 bottom-5 right-5 flex flex-col items-center z-10">
         <div className="flex flex-row">
-          <a href="https://x.com/dogwithspirit" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://x.com/" className="p-1 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-12 h-12 rounded-lg" />
           </a>
-          <a href="https://www.t.me/SPIRITONSOLANA" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://www.t.me/" className="p-1 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-12 h-12" />
           </a>
         </div>
       </div>
 
-      <div className='absolute bottom-8 left-5 text-slate-700 font-custom'>
-        click dog for fortune
+      <div className='absolute bottom-8 left-5 md:right-5 font-custom'>
+        click fwiza for fortune
       </div>
       <div className="absolute inset-0 flex items-center justify-center">
         <motion.img
@@ -114,9 +108,9 @@ function App() {
       </div>
       <div className="absolute inset-0 flex items-center justify-center -translate-x-2 md:-translate-x-4">
         <motion.img
-          src="/spirit.png"
-          alt="Spirit"
-          className="cursor-pointer max-w-[60%] md:max-w-[45%]"
+          src="/fwiza.png"
+          alt="fwiza"
+          className="cursor-pointer max-w-[60%] md:max-w-[40%]"
           animate={{
             y: [0, -20, 0], // Hover up and down
           }}
@@ -130,13 +124,13 @@ function App() {
       </div>
       {modalVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 font-custom1 p-4">
-          <div className="bg-white p-8 rounded-md text-center ring-2 ring-sky-300 ring-offset-2">
+          <div className="bg-white p-8 rounded-md text-center ring-2 ring-pink-300 ring-offset-2">
             <h2 className="text-xl mb-4">{fortune}</h2>
             <button 
               onClick={handleCloseModal} 
-              className="bg-gradient-to-r from-sky-400 via-blue-700 to-indigo-400 text-white py-2 px-4 rounded-full"
+              className="bg-gradient-to-r from-indigo-400 via-pink-300 to-indigo-400 text-white py-2 px-4 rounded-full"
             >
-              Bless You O Higher One
+              bless you fwiza
             </button>
           </div>
         </div>
