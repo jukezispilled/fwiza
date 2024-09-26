@@ -76,17 +76,17 @@ function App() {
 
       <div className="absolute md:top-5 bottom-5 right-5 flex flex-col items-center z-10">
         <div className="flex flex-row">
-          <a href="https://x.com/" className="p-1 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://x.com/fwizsolana" className="p-1 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-12 h-12 rounded-lg" />
           </a>
-          <a href="https://www.t.me/" className="p-1 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://www.t.me/fwizportal" className="p-1 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-12 h-12" />
           </a>
         </div>
       </div>
 
       <div className='absolute bottom-8 left-5 md:right-5 font-custom'>
-        click fwiza for fortune
+        click fwiz for fortune
       </div>
       <div className="absolute inset-0 flex items-center justify-center">
         <motion.img
@@ -109,7 +109,7 @@ function App() {
       <div className="absolute inset-0 flex items-center justify-center -translate-x-2 md:-translate-x-4">
         <motion.img
           src="/fwiza.png"
-          alt="fwiza"
+          alt="fwiz"
           className="cursor-pointer max-w-[60%] md:max-w-[40%]"
           animate={{
             y: [0, -20, 0], // Hover up and down
@@ -130,7 +130,7 @@ function App() {
               onClick={handleCloseModal} 
               className="bg-gradient-to-r from-indigo-400 via-pink-300 to-indigo-400 text-white py-2 px-4 rounded-full"
             >
-              bless you fwiza
+              bless you fwiz
             </button>
           </div>
         </div>
