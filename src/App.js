@@ -30,14 +30,6 @@ function App() {
     setAudio(audioElement);
   }, []);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('EccWGNJtdCGccBKkgi2vaPjvdp5E5w8EVBMoQy63pump');
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000); // Hide the message after 2 seconds
-  };
-
   const handleSpiritClick = () => {
     const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
     setFortune(randomFortune);
@@ -69,7 +61,7 @@ function App() {
       <div className='absolute left-5 top-5 flex justify-center rounded-full'>
         <div className='flex justify-center bg-slate-100 z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-pink-500'>
           <div className='text-xs md:text-sm overflow-x-auto whitespace-nowrap font-custom'>
-            CA: revealing...
+            CA: 2cksj2v4aBEu4fvB9gDHsXZ1ZPUhpvZoS7UfBAWNpump
           </div>
         </div>
       </div>
